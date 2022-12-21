@@ -1,0 +1,30 @@
+"4_cleaned_tweets_no_stopwords_no_dup30.csv"
+
+params={"layer_width1" : 512,
+        "dropout1" : 0.4,
+
+Dense1 = Dense(params["layer_width1"], activation='relu', kernel_regularizer='l1')(cls_token)
+
+Epoch 1/5
+574/574 [==============================] - 178s 301ms/step - loss: 7.1768 - accuracy: 0.5205 - auc: 0.5255 - precision: 0.5142 - recall: 0.4588 - val_loss: 1.1619 - val_accuracy: 0.6862 - val_auc: 0.5997 - val_precision: 0.2124 - val_recall: 0.4258
+Epoch 2/5
+574/574 [==============================] - 174s 303ms/step - loss: 1.1618 - accuracy: 0.5242 - auc: 0.5322 - precision: 0.5212 - recall: 0.4022 - val_loss: 1.2197 - val_accuracy: 0.1570 - val_auc: 0.5119 - val_precision: 0.1461 - val_recall: 0.9877
+Epoch 3/5
+574/574 [==============================] - 173s 302ms/step - loss: 1.1606 - accuracy: 0.5236 - auc: 0.5319 - precision: 0.5203 - recall: 0.4057 - val_loss: 1.1829 - val_accuracy: 0.3095 - val_auc: 0.3964 - val_precision: 0.1251 - val_recall: 0.6239
+Epoch 4/5
+574/574 [==============================] - 173s 302ms/step - loss: 1.1601 - accuracy: 0.5229 - auc: 0.5335 - precision: 0.5193 - recall: 0.4065 - val_loss: 1.0910 - val_accuracy: 0.8543 - val_auc: 0.5717 - val_precision: 0.5000 - val_recall: 2.1540e-04
+Epoch 5/5
+574/574 [==============================] - 174s 303ms/step - loss: 1.1601 - accuracy: 0.5242 - auc: 0.5326 - precision: 0.5214 - recall: 0.4007 - val_loss: 1.1607 - val_accuracy: 0.5256 - val_auc: 0.4100 - val_precision: 0.1120 - val_recall: 0.3257
+
+
+The Train Loss for the last epoch is:          1.1601
+The Validation Accuracy for the last epoch is: 0.5256
+The Validation ROC AUC for the last epoch is:  0.41
+
+Number of days in the test set       : 163
+Number of UP days predicted correct  : 8
+Number of DOWN days predicted correct: 64
+Accuracy                             : 0.44
+Number of days correct               : 72
+Guessing only UP days on test set    : 95.0
+Accuracy of guessing only UP Days    : 0.58
